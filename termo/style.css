@@ -204,7 +204,7 @@ section div table td {
     body {
         overflow: hidden;
         width: 100vw;
-        gap: 5px !important;
+        gap: 50px !important;
     }
 
     .teclado {
@@ -228,7 +228,7 @@ section div table td {
     }
 
     section {
-        height: 50%;
+        height: 40% !important;
     }
 
     section div table {
