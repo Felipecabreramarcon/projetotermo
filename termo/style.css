@@ -204,10 +204,11 @@ section div table td {
     body {
         overflow: hidden;
         width: 100vw;
+        gap: 5px !important;
     }
 
     .teclado {
-        height: 30%;
+        height: 25% !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -224,6 +225,10 @@ section div table td {
         justify-content: center;
         gap: 20px;
 
+    }
+
+    section {
+        height: 50%;
     }
 
     section div table {
@@ -244,10 +249,10 @@ section div table td {
     section div table td {
         background-color: #615458;
         border-radius: 10%;
-        height: 60px;
+        height: 50px;
         display: flex;
         align-items: center;
-        width: 60px;
+        width: 50px;
         text-align: center;
         justify-content: center;
         margin: 0;
