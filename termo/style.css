@@ -204,10 +204,11 @@ section div table td {
     body {
         overflow: hidden;
         width: 100vw;
-        gap: 50px !important;
+        gap: 30px !important;
     }
 
     .teclado {
+        margin-top: 40px;
         height: 25% !important;
         display: flex;
         justify-content: center;
