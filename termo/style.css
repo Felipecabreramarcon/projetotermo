@@ -204,7 +204,7 @@ section div table td {
     body {
         overflow: hidden;
         width: 100vw;
-        gap: 30px !important;
+        gap: 20px !important;
     }
 
     .teclado {
@@ -390,6 +390,10 @@ section div table td {
         width: 80px !important;
         transition: 200ms ease-in-out;
         cursor: pointer;
+    }
+
+    .assinatura {
+        display: none;
     }
 
 
