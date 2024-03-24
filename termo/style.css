@@ -1,3 +1,8 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background-color: #6e5c62;
     height: 100vh;
@@ -10,12 +15,12 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    overflow: hidden;
 }
 
 header {
     height: 5vh;
     width: 40%;
-
     padding: 10px 20px;
     display: flex;
     flex-direction: row;
@@ -46,7 +51,7 @@ header {
 .header-icons-div div {
     border: 2px solid #b7aeb4;
     height: 50%;
-    width: 10%;
+    width: 30px;
     margin: 0;
     font-weight: 500;
     color: #b7aeb4;
@@ -186,13 +191,212 @@ section div table td {
     cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    body {
+        overflow: hidden;
+        width: 100vw;
+    }
+
+    .teclado {
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .container {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    section div table {
+        height: 80%;
+        width: 80%;
+    }
+
+    section div table tr {
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 5px;
+        justify-content: center;
+
+    }
+
+    section div table td {
+        background-color: #615458;
+        border-radius: 10%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        width: 60px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .header-icons-div {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        height: 100%;
+        align-items: center;
+        gap: 10px;
+        width: 60px;
+    }
+
+    .header-icons-div div {
+        border: 2px solid #b7aeb4;
+        height: 50%;
+        width: 30px;
+        margin: 0;
+        font-weight: 500;
+        color: #b7aeb4;
+        border-radius: 20%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        transition: 200ms ease-in-out;
+
+    }
+
+    header {
+        height: 5vh;
+        width: 90%;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .b div img {
+        height: 20px;
+    }
+
+    .FirstRow {
+        gap: 5px;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-left: 35px;
+    }
+
+    .div-tecla {
+        gap: 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tecla {
+        height: 50px !important;
+        width: 30px !important;
+        background-color: #4C4347;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8%;
+        font-size: 20px;
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .enterRow {
+
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px !important;
+        margin-right: 50px;
+    }
+
+    .deletediv {
+
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px !important;
+        margin-right: 40px;
+    }
+
+    .delete {
+        height: 50px;
+        width: 50px !important;
+        background-color: #4C4347;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8%;
+        font-size: 20px;
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .delete img {
+        height: 25px !important;
+    }
+
+    .ENTER {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4C4347;
+        border-radius: 10PX;
+        height: 50px;
+        font-size: 15PX;
+        width: 80px !important;
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+    }
+
+
+
+}
+
 .teclado {
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
-    
+
 }
 
 .div-tecla {
