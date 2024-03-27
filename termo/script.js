@@ -4,7 +4,7 @@ let letras = document.getElementsByClassName("td");
 let teste = 5;
 
 function colocaLetra(event) {
-    let palavra = "BECAO";
+    let palavra = "COISA";
 
     if (cont <= teste) {
         let temp = event.target.innerHTML;
