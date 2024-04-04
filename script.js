@@ -5,14 +5,15 @@ let teste = 5;
 let linha = 1;
 let del = document.getElementById('delete');
 function colocaLetra(event) {
-    let palavra = "COISA";
+    let palavra = "JUNIN ";
 
     if (cont <= teste) {
         if (cont < 29) {
             letras[cont + 1].style.outline = "2px solid black"
         } else {
             letras[cont].style.outline = "2px solid black"
-        } let temp = event.target.innerHTML;
+        }
+        let temp = event.target.innerHTML;
         letras[cont].innerHTML = temp;
         tentativa += temp;
         cont++;
@@ -52,12 +53,12 @@ function seleciona(i) {
 
     let limiteInferior = (linha - 1) * 5;
     let limiteSuperior = linha * 5;
-    // Verifique se o índice 'i' está dentro da linha atual
+
     if (i >= limiteInferior && i < limiteSuperior) {
         for (let j = 0; j < letras.length; j++) {
             letras[j].style.outline = 'none';
         }
-        // Aplique o estilo de seleção à letra clicada
+
         letras[i].style.outline = '2px solid black';
         cont = i;
     }
@@ -76,6 +77,10 @@ function voltatecla() {
 
     letras[cont].innerHTML = '';
     if (cont > 0 && cont % 5 !== 0) {
+
+        tentativa.
+            console.log(tentativa);
+        atual = cont;
 
         letras[cont - 1].style.outline = "2px solid black";
         letras[cont].style.outline = "none"
