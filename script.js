@@ -5,7 +5,7 @@ let teste = 5;
 let linha = 1;
 let del = document.getElementById('delete');
 function colocaLetra(event) {
-    let palavra = "JUNIN ";
+    let palavra = "CARAI";
 
     if (cont <= teste) {
         if (cont < 29) {
