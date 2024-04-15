@@ -155,6 +155,8 @@ section div table td {
     color: white;
     font-size: 40px;
     font-weight: bold;
+    transition: 200ms ease-in-out;
+
 }
 
 .row2 {
