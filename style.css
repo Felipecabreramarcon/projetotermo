@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh !important;
+    height: 10vh;
 }
 
 header {
@@ -205,7 +205,59 @@ section div table td {
     cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 1024px) {
+    .teclado {
+        height: 25% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    section {
+        margin-top: 40px;
+        height: 40% !important;
+    }
+
+    section div table {
+        height: 80%;
+        width: 80%;
+    }
+
+    section div table tr {
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 5px;
+        justify-content: center;
+
+    }
+
+    section div table td {
+
+        border-radius: 10%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        width: 60px;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+
+    .td {
+        transition: 700ms ease-in-out;
+        transform: rotateY(0);
+    }
+}
+
+@media (max-width: 480px) {
     html {
         display: flex;
         justify-content: center;
@@ -222,7 +274,7 @@ section div table td {
     }
 
     .teclado {
-        margin-top: 100px;
+        margin-top: 80px;
         height: 25% !important;
         display: flex;
         justify-content: center;
@@ -238,11 +290,16 @@ section div table td {
         height: 100%;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 30px;
 
     }
 
+    .header {
+        height: 8vh !important;
+    }
+
     section {
+        margin-top: 80px;
         height: 40% !important;
     }
 
@@ -278,10 +335,7 @@ section div table td {
 
     }
 
-    .td {
-        transition: 4500ms ease-in-out;
-        transform: rotateY(0);
-    }
+
 
     .header-icons-div {
         display: flex;
@@ -323,7 +377,7 @@ section div table td {
     }
 
     .FirstRow {
-        gap: 5px;
+        gap: 15px;
         height: 30%;
         display: flex;
         flex-direction: row;
@@ -334,7 +388,7 @@ section div table td {
     }
 
     .div-tecla {
-        gap: 5px;
+        gap: 10px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -343,8 +397,8 @@ section div table td {
     }
 
     .tecla {
-        height: 50px !important;
-        width: 30px !important;
+        height: 60px !important;
+        width: 35px !important;
         background-color: #4C4347;
         text-align: center;
         margin: 0;
