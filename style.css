@@ -1,614 +1,72 @@
-html {
-    width: 100%;
-    height: 100%;
-}
-
 body {
-    background-color: rgb(192, 192, 192);
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     margin: 0;
-    display: flex;
-    justify-content: flex-start;
-    font-family: mitr;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: #005500ba;
     gap: 40px;
-    overflow: hidden;
+    font-family: inter;
+}
+
+img {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    width: 20vw;
+
+}
+
+div {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 20vw;
 }
 
 .header {
-    background: linear-gradient(180deg, rgba(0, 85, 0, 1) 36%, rgba(0, 75, 0, 1) 100%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-}
-
-header {
-    background: linear-gradient(180deg, rgba(0, 85, 0, 1) 36%, rgba(0, 75, 0, 1) 100%);
-    height: 5vh;
-    width: 40%;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.header-icons-div {
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    height: 100%;
-    align-items: center;
     gap: 10px;
-    width: 30%;
 }
 
-.LOGO {
-    cursor: pointer;
-    transition: 200ms ease-in-out;
-}
-
-.LOGO:hover {
-
-    transition: 200ms ease-in-out;
-
-}
-
-.header-icons-div div {
-    border: 2px solid rgb(192, 192, 192);
-    ;
-    height: 50%;
-    width: 30px;
+.header * {
+    color: rgba(255, 255, 255, 0.856);
     margin: 0;
-    font-weight: 500;
-    color: #b7aeb4;
-    border-radius: 20%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-    transition: 200ms ease-in-out;
 
 }
 
-.header-icons-div div:hover {
-
-    transition: 200ms ease-in-out;
-    transform: translateY(5px);
+.header h1 {
+    font-style: italic;
 }
 
-.a {
-    justify-content: start;
+.header h2 {
+    font-weight: 200;
+    font-size: 20px;
 }
 
-.b {
-    justify-content: end;
-}
-
-.colch {
-    margin-top: 28px;
-    text-align: center;
-
-}
-
-.interr {
-    margin: 0;
-    text-align: center;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70%;
-    width: 30%;
-}
-
-section div {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-
-}
-
-section div table {
-    height: 100%;
-    width: 100%;
-}
-
-
-section div table tr {
-    height: 5%;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 5px;
-    justify-content: center;
-
-}
-
-tbody {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-section div table td {
-    background-color: #777777;
-    border-radius: 10%;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    width: 75px;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+button {
+    background-color: #034b03a8;
+    width: 15vw;
+    height: 5vh;
+    border: 1px solid white;
+    border-radius: 10px;
     color: white;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 500ms ease-in-out;
-
+    transition: 200ms ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+    cursor: pointer;
 }
 
-
-.row2 {
-    background-color: transparent;
-
-    width: 75px;
-    height: 75px;
-    box-sizing: border-box;
-    padding: 4px;
-    border: 6px solid #777777;
-    background: transparent;
-}
-
-.letraF {
-    background-color: #3aa394;
-}
-
-.letraA {
-    background-color: #d3ad69;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
+button:hover {
+    background-color: #034b03;
+    width: 15vw;
+    height: 5vh;
+    border: 1px solid white;
+    border-radius: 10px;
     color: white;
-    height: 100%;
-    margin-left: 40px;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-.tecla {
-    height: 50px;
-    width: 70px;
-    background-color: #777777;
-    text-align: center;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8%;
-    font-size: 20px;
     transition: 200ms ease-in-out;
-    cursor: pointer;
-}
-
-@media (max-width: 1024px) {
-    .teclado {
-        height: 25% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
-
-    section {
-        margin-top: 40px;
-        height: 40% !important;
-    }
-
-    section div table {
-        height: 80%;
-        width: 80%;
-    }
-
-    section div table tr {
-        height: 5%;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 5px;
-        justify-content: center;
-
-    }
-
-    section div table td {
-
-        border-radius: 10%;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        width: 60px;
-        text-align: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        color: white;
-        font-size: 40px;
-        font-weight: bold;
-
-    }
-
-    .td {
-        transition: 700ms ease-in-out;
-        transform: rotateY(0);
-    }
-}
-
-@media (max-width: 480px) {
-    html {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        overflow-x: hidden;
-    }
-
-    body {
-        overflow: hidden;
-        width: 100vw;
-        gap: 5px !important;
-    }
-
-    .teclado {
-        margin-top: 80px;
-        height: 25% !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
-
-    .container {
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        color: white;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-
-    }
-
-    .header {
-        height: 8vh !important;
-    }
-
-    section {
-        margin-top: 80px;
-        height: 40% !important;
-    }
-
-    section div table {
-        height: 80%;
-        width: 80%;
-    }
-
-    section div table tr {
-        height: 5%;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        gap: 5px;
-        justify-content: center;
-
-    }
-
-    section div table td {
-        background-color: #615458;
-        border-radius: 10%;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        width: 50px;
-        text-align: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        color: white;
-        font-size: 40px;
-        font-weight: bold;
-
-    }
-
-
-
-    .header-icons-div {
-        display: flex;
-        flex-direction: row;
-        font-size: 20px;
-        height: 100%;
-        align-items: center;
-        gap: 10px;
-        width: 60px;
-    }
-
-    .header-icons-div div {
-        border: 2px solid #b7aeb4;
-        height: 50%;
-        width: 30px;
-        margin: 0;
-        font-weight: 500;
-        color: #b7aeb4;
-        border-radius: 20%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        cursor: pointer;
-
-
-    }
-
-    header {
-        height: 5vh;
-        width: 90%;
-        padding: 10px 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .b div img {
-        height: 20px;
-    }
-
-    .FirstRow {
-        gap: 15px;
-        height: 30%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin-left: 35px;
-    }
-
-    .div-tecla {
-        gap: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .tecla {
-        height: 60px !important;
-        width: 35px !important;
-        background-color: #4C4347;
-        text-align: center;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 8%;
-        font-size: 20px;
-        transition: 200ms ease-in-out;
-        cursor: pointer;
-    }
-
-    .enterRow {
-
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px !important;
-        margin-right: 50px;
-    }
-
-    .deletediv {
-
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px !important;
-        margin-right: 40px;
-    }
-
-    .delete {
-        height: 50px;
-        width: 50px !important;
-        background-color: #777777;
-        text-align: center;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 8%;
-        font-size: 20px;
-        transition: 200ms ease-in-out;
-        cursor: pointer;
-    }
-
-    .delete img {
-        height: 25px !important;
-    }
-
-    .ENTER {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #4C4347;
-        border-radius: 10PX;
-        height: 50px;
-        font-size: 15PX;
-        width: 80px !important;
-        transition: 200ms ease-in-out;
-        cursor: pointer;
-    }
-
-    .assinatura {
-        display: none;
-    }
-
-
-
-}
-
-.teclado {
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-
-}
-
-.div-tecla {
-    gap: 5px;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.tecla:hover {
-    transition: 500ms ease-in-out;
-    background-color: #342e31;
-}
-
-.delete {
-    height: 50px;
-    width: 80px;
-    background-color: #777777;
-    text-align: center;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8%;
-    font-size: 20px;
-    transition: 200ms ease-in-out;
-    cursor: pointer;
-}
-
-.delete:hover {
-
-    background-color: #342e31;
-    transition: 200ms ease-in-out;
-
-}
-
-
-.deletediv {
-
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-
-}
-
-.ENTER {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #777777;
-    border-radius: 10PX;
-    height: 50px;
-    width: 200px;
-    transition: 200ms ease-in-out;
-    cursor: pointer;
-}
-
-.ENTER:hover {
-    transition: 200ms ease-in-out;
-    background-color: #342e31;
-}
-
-.insta {
-    height: 35px;
-}
-
-.enterRow {
-    margin-left: 30PX;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-.FirstRow {
-    gap: 5px;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-right: 80px;
-}
-
-.teclaA {
-    height: 50px;
-    width: 70px;
-    background-color: #d3ad69;
-    text-align: center;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8%;
-    font-size: 20px;
-    transition: 200ms ease-in-out;
-    cursor: pointer;
-}
-
-.teclaA:hover {
-    transition: 200ms ease-in-out;
-    background-color: #d5a450;
-}
-
-.teclaF:hover {
-    transition: 200ms ease-in-out;
-    background-color: #2c796d;
-}
-
-.teclaF {
-    height: 50px;
-    width: 70px;
-    background-color: #3aa394;
-    text-align: center;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8%;
-    font-size: 20px;
-    transition: 200ms ease-in-out;
-    cursor: pointer;
 }
