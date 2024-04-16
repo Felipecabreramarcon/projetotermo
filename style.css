@@ -155,9 +155,10 @@ section div table td {
     color: white;
     font-size: 40px;
     font-weight: bold;
-    transition: 200ms ease-in-out;
+    transition: 500ms ease-in-out;
 
 }
+
 
 .row2 {
     background-color: transparent;
@@ -274,6 +275,12 @@ section div table td {
         color: white;
         font-size: 40px;
         font-weight: bold;
+
+    }
+
+    .td {
+        transition: 4500ms ease-in-out;
+        transform: rotateY(0);
     }
 
     .header-icons-div {
@@ -298,7 +305,7 @@ section div table td {
         align-items: center;
         display: flex;
         cursor: pointer;
-        transition: 200ms ease-in-out;
+
 
     }
 
@@ -432,7 +439,7 @@ section div table td {
 }
 
 .tecla:hover {
-    transition: 200ms ease-in-out;
+    transition: 500ms ease-in-out;
     background-color: #342e31;
 }
 
