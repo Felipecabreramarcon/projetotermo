@@ -6,7 +6,16 @@ let deleteButton = document.querySelector("#delete")
 let linhaAtual = 0
 let tentativa = ''
 cont = 1
-let palavra = "macaco"
+let palavra
+let dica
+let redirecionamento
+
+palavras = {
+    palavra: "Lixeira",
+    dica: "Este objeto é um guardião do nosso planeta, recebendo o que não serve mais e o transformando em algo útil novamente. É onde depositamos nossa contribuição para um mundo mais limpo e sustentável.",
+    redirecionamento: "https://superprobettanin.com.br/blog/lixeiras-de-reciclagem/"
+}
+
 function digita(tecla) {
     if (cont <= palavra.length) {
         tentativa += tecla
@@ -29,6 +38,11 @@ function backspace() {
 
 }
 function enter() {
+    if (tentativa.trim().toUpperCase() == palavra.trim().toUpperCase()) {
+        ganhou();
+        console.log('ganhou');
+
+    }
     if (tentativa.length < palavra.length) {
         alert("erro")
     } else {
@@ -81,27 +95,12 @@ function enter() {
         cont = 1
         atual()
     }
-    if (tentativa.trim().toUpperCase() === palavra.trim().toUpperCase()) {
-        ganhou();
-        console.log('ganhou');
-        linhas[linhaAtual].childNodes.forEach(e => {
-            e.style.backgroundColor = "#3aa394";
-            e.style.transform = "rotateY(360deg)";
-        });
-    }
+
+
 
 }
 enterButton.addEventListener("click", enter)
-function start(palavra) {
 
-    linhas.forEach((linha) => {
-        for (let i = 0; i < palavra.length; i++) {
-            const letra = document.createElement('td');
-            letra.classList = "td";
-            linha.appendChild(letra);
-        }
-    });
-}
 
 teclas.forEach((tecla) => {
     tecla.addEventListener("click", () => {
@@ -138,4 +137,45 @@ function ganhou() {
     jogo.innerHTML = ""
 }
 
-start(palavra)
+
+let isActive = false
+let howButton = document.querySelector("#HowToPlayButton")
+let howModal = document.querySelector(".HowToPlayButton")
+let howModalContainer = document.querySelector(".ModalHow")
+let body = document.querySelector("body")
+howButton.addEventListener("click", () => {
+    howModalContainer.style.display = "flex"
+    howModalContainer.style.backdropFilter = "brightness(0.3)"
+})
+howModalContainer.addEventListener("click", () => {
+    howModalContainer.style.display = "none"
+    howModalContainer.style.backdropFilter = ""
+})
+let tip = document.querySelector(".tip")
+function start(palavras) {
+    palavra = palavras.palavra
+    dica = palavras.dica
+    redirecionamento = palavras.redirecionamento
+
+    tip.innerHTML = dica
+    linhas.forEach((linha) => {
+        for (let i = 0; i < palavra.length; i++) {
+            const letra = document.createElement('td');
+            letra.classList = "td";
+            linha.appendChild(letra);
+        }
+    });
+}
+start(palavras)
+
+let isOpen = false
+function abreDica() {
+    if (isOpen) {
+        tip.style.display = "flex"
+        isOpen = !isOpen
+    } else {
+        tip.style.display = "none"
+        isOpen = !isOpen
+    }
+}
+
