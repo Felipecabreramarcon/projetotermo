@@ -61,6 +61,7 @@ body {
     font-size: 15px;
     border-radius: 10px;
     display: none;
+    z-index: 1;
 }
 
 header {
