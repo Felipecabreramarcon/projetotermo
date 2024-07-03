@@ -49,24 +49,34 @@ div {
     font-size: 20px;
 }
 
-button {
-    background-color: #034b03a8;
-    width: 15vw;
+
+a{
+text-decoration: none;
+    
+}
+
+.button:hover {
+    background-color: #034b03;
+    width:20vw;
     height: 5vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+.button{
+    background-color: #034b03a8;
     border: 1px solid white;
     border-radius: 10px;
     color: white;
     transition: 200ms ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #034b03;
-    width: 15vw;
+    width:20vw;
     height: 5vh;
-    border: 1px solid white;
-    border-radius: 10px;
-    color: white;
-    transition: 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    font-size:16px;
+
+    justify-content: center;
 }

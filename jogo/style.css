@@ -16,6 +16,7 @@ body {
     align-items: center;
     gap: 40px;
     overflow: hidden;
+    position: relative;
 }
 
 .header {
@@ -239,11 +240,10 @@ section div table td {
     align-items: center;
     border-radius: 8%;
     font-size: 20px;
-    transition: 200ms ease-in-out;
     cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px ) and (max-width: 1024px) {
     .teclado {
         height: 25% !important;
         display: flex;
@@ -445,7 +445,6 @@ section div table td {
         align-items: center;
         border-radius: 8%;
         font-size: 20px;
-        transition: 200ms ease-in-out;
         cursor: pointer;
     }
 
@@ -482,7 +481,6 @@ section div table td {
         align-items: center;
         border-radius: 8%;
         font-size: 20px;
-        transition: 200ms ease-in-out;
         cursor: pointer;
     }
 
@@ -649,4 +647,57 @@ section div table td {
     font-size: 20px;
     transition: 200ms ease-in-out;
     cursor: pointer;
+}
+
+.failScreen{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    font-size: 40px;
+    color: white;
+    background-color: #3b3b3bdc;
+    justify-content: center;
+    align-items: center;
+}
+.failScreen h1{
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+.failScreen h2{
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.flexrow{
+    display: flex;
+    gap: 10px;
+    width: 40%;
+    height: 150px;
+    justify-content: center;
+
+}
+.flexrow button{
+    height: 50px;
+    width: 250px;
+    background-color: #777777;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+.flexrow button:hover{
+    height: 50px;
+    width: 250px;
+    background-color: #555555;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
 }
