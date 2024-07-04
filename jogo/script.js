@@ -28,33 +28,33 @@ const palavras = [
     redirecionamento:
       "https://mundoeducacao.uol.com.br/geografia/reciclagem.htm",
   },
-  // {
-  //   palavra: "Biodiversidade",
-  //   dica:
-  //     "Variedade de vida na Terra, incluindo a diversidade de espécies, ecossistemas e diferenças genéticas dentro das populações.",
-  //   redirecionamento:
-  //     "https://www.greenpeace.org/brasil/blog/o-que-e-biodiversidade-e-quais-as-ameacas/",
-  // },
-  // {
-  //   palavra: "Desmatamento",
-  //   dica:
-  //     "Remoção de florestas para dar lugar à agricultura ou desenvolvimento urbano, causando impactos ambientais significativos.",
-  //   redirecionamento: "https://www.ecycle.com.br/desmatamento/",
-  // },
-  // {
-  //   palavra: "Reflorestamento",
-  //   dica:
-  //     "Plantio de árvores em áreas onde a floresta foi destruída, ajudando a recuperar ecossistemas e combater as mudanças climáticas.",
-  //   redirecionamento:
-  //     "https://www.iberdrola.com/sustentabilidade/o-que-e-reflorestamento#:~:text=Trata%2Dse%20do%20plantio%20em,adequado%20nesse%20caso%20seria%20florestamento",
-  // },
-  // {
-  //   palavra: "Ecologia",
-  //   dica:
-  //     "Ciência que estuda as relações entre os organismos vivos e o ambiente em que vivem, incluindo interações com outros organismos.",
-  //   redirecionamento:
-  //     "https://brasilescola.uol.com.br/biologia/ecologia.htm#:~:text=Ecologia%20%C3%A9%20a%20ci%C3%AAncia%20que%20estuda%20as%20rela%C3%A7%C3%B5es%20entre%20os,%2C%20popula%C3%A7%C3%B5es%2C%20comunidades%20e%20ecossistemas",
-  // },
+  {
+    palavra: "Biodiversidade",
+    dica:
+      "Variedade de vida na Terra, incluindo a diversidade de espécies, ecossistemas e diferenças genéticas dentro das populações.",
+    redirecionamento:
+      "https://www.greenpeace.org/brasil/blog/o-que-e-biodiversidade-e-quais-as-ameacas/",
+  },
+  {
+    palavra: "Desmatamento",
+    dica:
+      "Remoção de florestas para dar lugar à agricultura ou desenvolvimento urbano, causando impactos ambientais significativos.",
+    redirecionamento: "https://www.ecycle.com.br/desmatamento/",
+  },
+  {
+    palavra: "Reflorestamento",
+    dica:
+      "Plantio de árvores em áreas onde a floresta foi destruída, ajudando a recuperar ecossistemas e combater as mudanças climáticas.",
+    redirecionamento:
+      "https://www.iberdrola.com/sustentabilidade/o-que-e-reflorestamento#:~:text=Trata%2Dse%20do%20plantio%20em,adequado%20nesse%20caso%20seria%20florestamento",
+  },
+  {
+    palavra: "Ecologia",
+    dica:
+      "Ciência que estuda as relações entre os organismos vivos e o ambiente em que vivem, incluindo interações com outros organismos.",
+    redirecionamento:
+      "https://brasilescola.uol.com.br/biologia/ecologia.htm#:~:text=Ecologia%20%C3%A9%20a%20ci%C3%AAncia%20que%20estuda%20as%20rela%C3%A7%C3%B5es%20entre%20os,%2C%20popula%C3%A7%C3%B5es%2C%20comunidades%20e%20ecossistemas",
+  },
 ];
 
 function digita(tecla) {
