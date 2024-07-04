@@ -12,6 +12,22 @@
   </head>
 
   <body>
+    <div class="winModal">
+      <div class="winModalCard">
+        <h1>Parabéns!</h1>
+        <h2>Você acertou a palavra!</h2>
+        <div class="flexCol">
+          <div class="flexrow">
+            <button class="winButton" onclick="window.location.href = '../'">
+              Voltar ao menu principal
+            </button>
+            <button class="winButton ii" onclick="proximaPalavra()">
+              Próxima palavra
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="failScreen">
       <h1>Fim de jogo!</h1>
       <h2>Deseja tentar novamente?</h2>
@@ -131,6 +147,8 @@
     <p style="opacity: 0" class="assinatura">
       É nois choma <img style="height: 20px" src="assets/image copy 2.png" />
     </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 
     <script src="script.js"></script>
   </body>
